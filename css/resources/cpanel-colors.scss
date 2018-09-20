@@ -1,0 +1,126 @@
+/*darken/lighten*/
+$bg-black: #000;
+$bg-mblack: #333;
+$bg-white: #FFF;
+$ib-color-a: #fa6630;
+$ib-color-b: #be155e;
+$bg-gradient: linear-gradient(to right, $ib-color-a, $ib-color-b);
+
+/*----------------------------------------------------------------------------------*/
+/* Primary
+/*----------------------------------------------------------------------------------*/
+$bg-primary: #4a596a;
+$bg-primary-light: lighten($bg-primary, 15%);
+$bg-primary-lighter: lighten($bg-primary, 30%);
+
+.bg-primary{
+	background-color: $bg-primary;
+}
+
+.bg-primary-light{
+	background-color: $bg-primary-light;
+}
+
+.bg-primary-lighter{
+	background-color: $bg-primary-lighter;
+}
+
+/*----------------------------------------------------------------------------------*/
+/* Accent
+/*----------------------------------------------------------------------------------*/
+$bg-accent: #5f8fdf;
+$bg-accent-light: lighten($bg-accent, 15%);
+$bg-accent-lighter: lighten($bg-accent, 30%);
+
+.bg-accent{
+	background-color: $bg-accent;
+}
+
+.bg-accent-light{
+	background-color: $bg-accent-light;
+}
+
+.bg-accent-lighter{
+	background-color: $bg-accent-lighter;
+}
+
+/*----------------------------------------------------------------------------------*/
+/* Success
+/*----------------------------------------------------------------------------------*/
+$bg-success: #13ce66;
+$bg-success-light: lighten($bg-success, 15%);
+$bg-success-lighter: lighten($bg-success, 30%);
+
+.bg-success{
+	background-color: $bg-success;
+}
+
+.bg-success-light{
+	background-color: $bg-success-light;
+}
+
+.bg-success-lighter{
+	background-color: $bg-success-lighter;
+}
+
+/*----------------------------------------------------------------------------------*/
+/* Warning
+/*----------------------------------------------------------------------------------*/
+$bg-warning: #f7ba2a;
+$bg-warning-light: lighten($bg-warning, 15%);
+$bg-warning-lighter: lighten($bg-warning, 30%);
+
+.bg-warning{
+	background-color: $bg-warning;
+}
+
+.bg-warning-light{
+	background-color: $bg-warning-light;
+}
+
+.bg-warning-lighter{
+	background-color: $bg-warning-lighter;
+}
+
+/*----------------------------------------------------------------------------------*/
+/* Danger
+/*----------------------------------------------------------------------------------*/
+$bg-danger: #ec205f;
+$bg-danger-light: lighten($bg-danger, 15%);
+$bg-danger-lighter: lighten($bg-danger, 30%);
+
+.bg-danger{
+	background-color: $bg-danger;
+}
+
+.bg-danger-light{
+	background-color: $bg-danger-light;
+}
+
+.bg-danger-lighter{
+	background-color: $bg-danger-lighter;
+}
+
+/*----------------------------------------------------------------------------------*/
+/* Grey
+/*----------------------------------------------------------------------------------*/
+$bg-grey: #909399;
+$bg-grey-light: lighten($bg-grey, 15%);
+$bg-grey-lighter: lighten($bg-grey, 30%);
+
+.bg-grey{
+	background-color: $bg-grey;
+}
+
+.bg-grey-light{
+	background-color: $bg-grey-light;
+}
+
+.bg-grey-lighter{
+	background-color: $bg-grey-lighter;
+}
+
+/*----------------------------------------------------------------------------------*/
+/* Border Color
+/*----------------------------------------------------------------------------------*/
+$border: #ebeef5;

@@ -1,0 +1,108 @@
+.ib-btn{	
+	display: inline-block;
+	line-height: 1;
+	white-space: nowrap;
+	cursor: pointer;
+	background: #fff;
+	border: 1px solid $bg-grey;
+	border-color: $bg-grey;
+	text-align: center;
+	box-sizing: border-box;
+	outline: none;
+	margin: 0;
+	transition: .3s;
+	font-weight: 600;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	padding: 12px 20px;
+	font-size: 14px;
+	border-radius: 4px;
+	&.ib-round{
+		border-radius: 20px;
+		padding: 12px 23px;
+	}
+
+	&.ib-circle{
+		border-radius: 50%;
+    padding: 12px;
+	}
+
+	&.ib-primary{
+		color: #FFF;
+		@extend .bg-primary;
+		border-color: $bg-primary;
+	}
+
+	&.ib-success{
+		color: #FFF;
+		@extend .bg-success;
+		border-color: $bg-success;
+	}
+
+	&.ib-info{
+		color: #FFF;
+		@extend .bg-accent;
+		border-color: $bg-accent;
+	}
+
+	&.ib-warning{
+		color: #FFF;
+		@extend .bg-warning;
+		border-color: $bg-warning;
+	}
+
+	&.ib-danger{
+		color: #FFF;
+		@extend .bg-danger;
+		border-color: $bg-danger;
+	}
+
+	&.ib-menu,
+	&.ib-close{
+    padding: 0;
+    height: 45px;
+    width: 45px;
+    position: relative;
+    border-color: transparent;
+    span{
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: auto;
+			width: 22px;
+			height: 2px;
+			background: $bg-grey-light;
+    	&:after,
+    	&:before{
+				content: "";
+				position: absolute;
+				left: 0;
+				display: block;
+				width: 22px;
+				height: 2px;
+				background: $bg-grey-light;
+    	}
+    	&:before{
+    		top: -6px;
+    	}
+    	&:after{
+    		top: 6px;
+    	}
+    }
+	}
+
+	&.ib-close{
+		span{
+			background-color: transparent;
+			&:before{
+				top: 0;
+				transform: rotate(45deg);
+			}
+			&:after{
+				top: 0;
+				transform: rotate(-45deg);
+			}
+		}
+	}
+}

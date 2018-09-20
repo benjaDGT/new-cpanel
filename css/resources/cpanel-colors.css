@@ -1,0 +1,72 @@
+/*darken/lighten*/
+/*----------------------------------------------------------------------------------*/
+/* Primary
+/*----------------------------------------------------------------------------------*/
+.bg-primary {
+  background-color: #4a596a; }
+
+.bg-primary-light {
+  background-color: #8899ac; }
+
+.bg-primary-lighter {
+  background-color: #d3d9e0; }
+
+/*----------------------------------------------------------------------------------*/
+/* Accent
+/*----------------------------------------------------------------------------------*/
+.bg-accent {
+  background-color: #5f8fdf; }
+
+.bg-accent-light {
+  background-color: #c9d9f4; }
+
+.bg-accent-lighter {
+  background-color: white; }
+
+/*----------------------------------------------------------------------------------*/
+/* Success
+/*----------------------------------------------------------------------------------*/
+.bg-success {
+  background-color: #13ce66; }
+
+.bg-success-light {
+  background-color: #6ff2a9; }
+
+.bg-success-lighter {
+  background-color: #e4fcef; }
+
+/*----------------------------------------------------------------------------------*/
+/* Warning
+/*----------------------------------------------------------------------------------*/
+.bg-warning {
+  background-color: #f7ba2a; }
+
+.bg-warning-light {
+  background-color: #fce2a5; }
+
+.bg-warning-lighter {
+  background-color: white; }
+
+/*----------------------------------------------------------------------------------*/
+/* Danger
+/*----------------------------------------------------------------------------------*/
+.bg-danger {
+  background-color: #ec205f; }
+
+.bg-danger-light {
+  background-color: #f695b3; }
+
+.bg-danger-lighter {
+  background-color: white; }
+
+/*----------------------------------------------------------------------------------*/
+/* Grey
+/*----------------------------------------------------------------------------------*/
+.bg-grey {
+  background-color: #909399; }
+
+.bg-grey-light {
+  background-color: #d2d4d6; }
+
+.bg-grey-lighter {
+  background-color: white; }

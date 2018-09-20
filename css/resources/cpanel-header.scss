@@ -1,0 +1,267 @@
+/*----------------------------------------------------------------------------------*/
+/* Header
+/*----------------------------------------------------------------------------------*/
+header{
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	box-shadow: 0 -20px 10px 20px rgba(0,0,0,.25);
+	h1{
+		overflow: hidden;
+		height: 0;
+		width: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+.ib-wrap-header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	width: 94%;
+	margin: 0 auto;
+}
+
+.ib-wrap-logo{
+	width: 140px;
+	a{
+		display: block;
+		height: auto;
+		img{
+			width: 100%;
+		}
+	}
+}
+
+.ib-wrap-avatar{
+	position: relative;
+	.ib-avatar-content{
+		width: 45px;
+		height: 45px;
+		position: relative;
+		padding: 4px;
+		background: transparent;
+		&:before{
+			content: "";
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			border-radius: 50%;
+			align-items: center;
+			font-size: 16px;
+			font-weight: 600;
+			color: #FFF;
+			text-transform: uppercase;
+			@extend .bg-grey;
+			//box-shadow: 0 3px 10px 0 rgba(49,49,93,.08), 0 2px 7px 0 rgba(0,0,0,.08);
+		}
+
+		.ib-avatar-name{
+			display: none;
+		}
+
+		.ib-badge{
+			position: absolute;
+			top: 0;
+			right: -3px;
+			z-index: 1;
+		}
+	}
+
+	.ib-dropdown-menu{
+		right: 0;
+		left: auto;
+		top: 100%;
+		margin-top: 10px;
+	}
+}
+
+.ib-badge{
+	background: $bg-gradient;
+	border-radius: 10px;
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	height: 18px;
+	line-height: 18px;
+	padding: 0 6px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.ib-wrap-menu{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 250px;
+	z-index: 9999;
+	overflow-x: hidden;
+	overflow-y: auto;
+	box-shadow: -10px 0 10px 10px rgba(0,0,0,.2), -10px 0 20px 20px rgba(0,0,0,.2);
+	transform: translateX(-100%);
+	opacity: 0;
+	transition: all .5s;
+	background: linear-gradient(#3f3c3b, #3e3a3c);
+	&.ib-open{
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	.ib-wrap-btn{
+		&:after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.ib-close{
+			background-color: transparent;
+			border: 0;
+			float: right;
+		}
+	}
+}
+
+.ib-main-menu{
+	width: 100%;
+	position: relative;
+
+	[class^="ib-icon-"], 
+	[class*=" ib-icon-"]{
+		width: 30px;
+		height: 30px;
+		margin-right: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #FFF;
+		font-size: 20px;
+		font-weight: 300;
+	}
+
+	.ib-icon-cloud,
+	.ib-icon-comment,
+	.ib-icon-engranes,
+	.ib-icon-megaphone{
+		font-size: 24px;
+	}
+
+	li{
+		position: relative;
+		font-size: 14px;
+		color: #FFF;
+		min-height: 45px;
+
+		a{
+			display: flex;
+			width: 100%;
+			min-height: 45px;
+			align-items: center;
+			padding: 0 15px;
+			border-top: 1px solid rgba(0,0,0,0.2);
+			position: relative;
+			z-index: 2;
+			&:before{
+				content: "";
+				display: block;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				z-index: -1;
+				background: $bg-gradient;
+				left: 0;
+				top: 0;
+				opacity: 0;
+				transition: opacity .3s;
+			}
+
+			&.ib-active,
+			&:hover{
+				&:before{
+					opacity: 1;
+				}
+				&:after{
+					transform: rotate(180deg);
+				}
+			}
+		}
+
+		.ib-badge{
+			width: 25px;
+			margin-left: 10px;
+			height: 25px;
+			border-radius: 50%;
+			line-height: 25px;
+			font-weight: 600;
+			background: rgba(0,0,0,.4);
+		}
+
+		&.ib-btn-group{
+			display: flex;
+			height: 50px;
+			.ib-btn{
+				width: 33.33%;
+				flex-grow: 1;
+				border-radius: 0;
+				background-color: transparent;
+				border-left: 0;
+				border-bottom: 1px solid rgba(0,0,0,0.2);
+				border-top: 1px solid rgba(0,0,0,0.2);
+				border-right: 1px solid rgba(0,0,0,0.2);
+				.ib-text{
+					display: none;
+				}
+				&:last-child{
+					border-right: 0;
+				}
+			}
+
+			[class^="ib-icon-"], 
+			[class*=" ib-icon-"]{
+				margin: 0 auto;
+				font-size: 30px;
+			}
+		}
+	}
+
+	.ib-child-menu{
+		>a{
+			padding-right: 35px;
+			&:after{
+				content: "\e901";
+				display: inline-block;
+				position: absolute;
+				right: 0;
+				top: 0;
+				height: 20px;
+				line-height: 20px;
+				margin-top: 13px;
+				color: #FFF;
+				font-size: 12px;
+				width: 35px;
+				text-align: center;
+				z-index: 2;
+				font-family: 'ib-icon';
+				transition: all .4s;
+			}
+		}
+
+		.ib-sub-menu{
+			transition: all .4s;
+			max-height: 0;
+			overflow: hidden;
+			background-color: rgba(0,0,0,0.3);
+		}
+		&.ib-active{
+			.ib-sub-menu{
+				transition: all 1s;
+				max-height: 1500px;
+			}
+		}
+	}
+}

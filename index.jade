@@ -1,0 +1,120 @@
+doctype html
+html(lang='en')
+  head
+    title IDXBOOST | CPANEL
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+    meta(name="apple-mobile-web-app-capable", content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style", content="#4b4b4b")
+    meta(name="theme-color", content="#4b4b4b")
+    meta(name="msapplication-navbutton-color", content="#4b4b4b")
+
+    link(rel="stylesheet", href="css/cpanel-idxboost.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800")
+
+  body
+
+    header
+      h1 IDX Boost! Cutting-Edge MLS/IDX Search for Wordpress
+      .ib-wrap-header
+        .ib-wrap-btn
+          button.ib-btn.ib-menu: span
+        .ib-wrap-logo
+          a(href="#"): img(src="images/logo.png")
+        .ib-wrap-avatar
+          button.ib-avatar-content
+            span.ib-avatar-name Francisco Aguirre
+            span.ib-badge 30
+          ul.ib-dropdown-menu
+            li: a(href="#") Contact Form Inquires
+            li: a(href="#") Notifications
+              span.ib-badge 2
+            li: a(href="#") Leads
+              span.ib-badge 28
+            li.ib-dropdown-menu-line: a(href="#") Logout
+    
+    aside.ib-wrap-menu.ib-open
+      .ib-wrap-btn
+        button.ib-btn.ib-close: span
+      ul.ib-main-menu
+        li
+          a(href="#")
+            span.ib-icon-cloud
+            span.ib-text My Leads
+            span.ib-badge 30
+        li.ib-child-menu
+          a(href="#")
+            span.ib-icon-user
+            span.ib-text My Account
+          ul.ib-sub-menu
+            li: a(href="#") My Account
+            li: a(href="#") Registration Key
+            li: a(href="#") Change Password
+            li: a(href="#") Billing Information
+            li: a(href="#") MLS Setup
+            li: a(href="#") Analytics Integration
+            li: a(href="#") CRM Integration
+            li: a(href="#") Social Networks
+            li: a(href="#") Terms y Conditions
+        li.ib-child-menu
+          a(href="#")
+            span.ib-icon-engranes
+            span.ib-text IDX Settings
+          ul.ib-sub-menu
+            li: a(href="#") Cities
+            li: a(href="#") Display Preferences
+        li.ib-child-menu
+          a(href="#")
+            span.ib-icon-home
+            span.ib-text My Listings
+          ul.ib-sub-menu
+            li: a(href="#") Exclusive Listings
+            li: a(href="#") Sold Properties
+            li: a(href="#") Custom Property Detail
+        li
+          a(href="#")
+            span.ib-icon-filters
+            span.ib-text Filters
+        li
+          a(href="#")
+            span.ib-icon-search
+            span.ib-text Search Filters
+        li.ib-child-menu
+          a(href="#")
+            span.ib-icon-building
+            span.ib-text Buildings
+          ul.ib-sub-menu
+            li: a(href="#") My buildings
+            li: a(href="#") Building Groups
+            li: a(href="#") Import Buildings
+        li
+          a(href="#")
+            span.ib-icon-market
+            span.ib-text Off market listings
+        li
+          a(href="#")
+            span.ib-icon-mail
+            span.ib-text Email Settings
+        li
+          a(href="#")
+            span.ib-icon-megaphone
+            span.ib-text Marketing
+        li
+          a(href="#")
+            span.ib-icon-comment
+            span.ib-text Tutorials
+        li.ib-btn-group
+          a(href="#").ib-btn 
+            span.ib-text Go to my Website
+            span.ib-icon-rocket
+          a(href="#").ib-btn 
+            span.ib-text Go to my WP Dashboard
+            span.ib-icon-wordpress
+          a(href="#").ib-btn 
+            span.ib-text Go to my WP Customizer
+            span.ib-icon-edit
+
+    
+
+    script(type="text/javascript", src="js/jquery-3.1.1.min.js")
+    script(type="text/javascript", src="js/script.js")

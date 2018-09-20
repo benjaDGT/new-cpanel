@@ -1,0 +1,56 @@
+.ib-btn {
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #dcdfe6;
+  border-color: #dcdfe6;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  font-weight: 600;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 4px; }
+  .ib-btn.ib-round {
+    border-radius: 20px;
+    padding: 12px 23px; }
+  .ib-btn.ib-circle {
+    border-radius: 50%;
+    padding: 12px; }
+
+/*<div>
+	<el-button>Default</el-button>
+	<el-button type="primary">Primary</el-button>
+	<el-button type="success">Success</el-button>
+	<el-button type="info">Info</el-button>
+	<el-button type="warning">Warning</el-button>
+	<el-button type="danger">Danger</el-button>
+</div>
+
+<div style="margin: 20px 0">
+	<el-button plain>Plain</el-button>
+	<el-button type="primary" plain>Primary</el-button>
+	<el-button type="success" plain>Success</el-button>
+	<el-button type="info" plain>Info</el-button>
+	<el-button type="warning" plain>Warning</el-button>
+	<el-button type="danger" plain>Danger</el-button>
+</div>
+
+<div>
+	<el-button round>Round</el-button>
+	<el-button type="primary" round>Primary</el-button>
+	<el-button type="success" round>Success</el-button>
+	<el-button type="info" round>Info</el-button>
+	<el-button type="warning" round>Warning</el-button>
+	<el-button type="danger" round>Danger</el-button>
+</div>*/
